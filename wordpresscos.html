@@ -1,0 +1,101 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>路祥。我爱你的网站</title>
+<meta name="Keywords" content="路祥个人博客,15522542120,路祥我爱你,腾讯云存储COS的WordPress远程附件支持插件，文后附实操教程" >
+<meta name="Description" content="路祥个人博客,15522542120,按键精灵脚本路祥我爱你" >
+<style type="text/css">
+#目录 {
+	color: #F00;
+}
+body p {
+	text-align: center;
+}
+</style>
+<base target="_blank">
+</head>
+
+<body bgcolor="#CCCCCC">
+<h3>这是我个人的网站，挂在GitHub上托管，访问很慢，所以就不放图片直接放代码。够丑，直接看内容，下面是我网站的目录，想看哪一篇直接点开看就行，图片挂在cos托管上，GitHub上面只有代码，访问就会快一些。</h3>
+<ol>
+  <blockquote>
+    <blockquote>
+      <h1 id="目录">转载：基于腾讯云存储COS的WordPress远程附件支持插件，文后附实操教程     --------<a href="index.html">返回目录</a></h1>
+    </blockquote>
+    <p>2018年5月10日指导一个顾客设置成功，证明本教程依旧有效</p>
+    <p><strong>插件特色</strong></p>
+    <ul type="1">
+      <li>使用腾讯云对象存储服务存储wordpress站点图片等多媒体文件</li>
+      <li>可配置是否上传缩略图和是否保留本地备份</li>
+      <li>本地删除可同步删除腾讯云上面的文件</li>
+      <li>支持腾讯云云存储服务绑定的个性域名</li>
+    </ul>
+    <p><strong>项目地址</strong></p>
+    <ul type="1">
+      <li>github项目地址: https://github.com/JefferyWang/qcloud-cos-support</li>
+      <li>Git@OSC项目地址: http://git.oschina.net/wangjunfeng/qcloud-cos-support</li>
+    </ul>
+    <p><strong>腾讯云COS的优点</strong></p>
+    <ul type="1">
+      <li>便宜：阿里云北京\深圳\上海区域送免费额度。每个区域的免费额度包括：5GB存储容量、5GB/月外网流出流量、5万次/月Put类请求、50万次/月Get类请求 ，此免费额度有效期到2015年底。而腾讯云免费额度是50G存储空间、50G/月免费流量。这样的免费额度对于小站长已经足够使用。</li>
+      <li>高速：腾讯云COS用户通过遍布全国的OC节点保障文件的加速分发和就近接入，同时支持CNAME接入。而阿里云的类似的服务CDN需要另外购买，相对来说某些地方阿里云可能慢一点。</li>
+    </ul>
+    <p><strong>安装</strong><br />
+      自行下载插件包，然后上传安装，进行相应的参数配置，即可立即使用。下载插件包可以到github或者git@osc下载，也可点击以下链接直接下载。<br />
+      <strong>下载地址</strong><br />
+      下载地址：http://cdn.wangjunfeng.com/downloads/qcloud-cos-support.zip<br />
+      <strong>配置插件</strong></p>
+    <ul type="1">
+      <li>方法一：在wordpress插件管理页面有设置按钮，进行设置</li>
+      <li>方法二：在wordpress后台管理左侧导航栏设置下腾讯云cos设置，点击进入设置页面</li>
+    </ul>
+    <p><strong>截图</strong></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/txcos1.jpg" alt="" width="300" height="179" /></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/txcos2.jpg" alt="" width="300" height="148" /></p>
+    <p>本文来源链接: http://blog.wangjunfeng.com/archives/643</p>
+    <p>这个文章在多个网站已经分享，作者看原贴也是很久没有更新了，我中间在操作的时候也遇到了一些问题，苦于没人指导，只能自己一点点摸索，最终才完成了，下面附上自己原创的，对原贴的补充</p>
+    <p>防止找不到插件，我自己在服务器上备份了一下，可以免费下载</p>
+    <p><a href="http://chapu8-1253293507.costj.myqcloud.com/wp-content/uploads/2017/01/qcloud-cos-support.zip">qcloud-cos-support</a></p>
+    <p>下载安装不再赘述，就是简单的上传安装，主要在于设置</p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/txcos3.jpg" alt="" width="805" height="51" /></p>
+    <p>图片太小，不附图了</p>
+    <p>注册腾讯云存储COS，开通很简单，需要QQ登录，注册、实名认证，之后开通对象存储服务，在里面创建自己的Bucket</p>
+    <p>就是自己的存储盘名，要求英文数字</p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/txcos4.jpg" alt="" width="824" height="283" /></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/chuangjianbucket.jpg" alt="" width="735" height="569" /></p>
+    <p>然后很关键，我反复试了两天，看遍了相关的文件，还好几次想去改代码，由于自己不会，最终没有进行，还好没有改代码，不然就误入歧途了，</p>
+    <h4>重点：设置腾讯云存储Bucket</h4>
+    <p>在基础设置中，设置，公有读私有写、开启回源，网址为自己的域名，设置开启跨域访问CORS</p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/chuangjianbucket.jpg" alt="" width="735" height="569" /></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/kuayufangwen-1.jpg" alt="" width="1213" height="198" /></p>
+    <p>然后是查找秘钥，根据插件设置页面可以很容易找到</p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/miyao.jpg" alt="" width="1427" height="410" /></p>
+    <p> </p>
+    <p>回到wordpress中，填写插件设置，特别提示，尤其是小白<img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/txcos/wenjianjia.jpg" alt="" width="1252" height="338" /></p>
+    <p><strong>提示中的大括号{}是要去掉的，两个都要去掉！</strong></p>
+    <p>之后保存，</p>
+    <p>完成后进入多媒体，上传一张图片，如果正常显示，说明成功了！恭喜！你又学会了一招。</p>
+    <p>附记:</p>
+    <p>很多人在建设了网站后，会想到把图片放到另一个网站来加快自己网站的速度，我在寻找的过程中，看过网贴，找过群友，最重要的还是自己摸索，保持好奇的心，虚心请教。最终都会有成果的。</p>
+    <p>寻找腾讯云存储的过程中还看过几个其他的方法，七牛、阿里云COS，贴图库，远程FTP服务器等，好多网站，关键还是要找稳定的大的网站，还要有自己的备份，万一存储网站挂了，也不至于丢失自己的素材。</p>
+    <p>感谢前辈发帖分享，我才有机会掌握这个方法，我自己的经验我都有记录，并且分享，如果看完帖子还有不明白的想得到我的帮助，可以通过我资料中写的联系方式找到我，</p>
+    <p>关于wordpress插件腾讯云存储COS设置的问题，简单介绍帮助可以在我的淘宝店购买相关服务，下面是淘宝店链接</p>
+    <p><a href="https://shop114641790.taobao.com/" target="_blank" rel="noopener">紫火灵狐的淘宝店</a></p>
+    <p>2018年5月10日指导一个顾客设置成功，证明本教程依旧有效</p>
+    <h3>&nbsp;</h3></blockquote><blockquote>
+    <p><br />
+    </p>
+    <h3>如果你想了解我，就可以<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2755856099&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer">直接沟通<img title="直接联系" src="http://wpa.qq.com/pa?p=2:2681564632:51" alt="直接联系" border="0" /></a></h3>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/weixin.jpg" alt="" width="231" height="231" /></p>
+    <p>个人微信15522542120</p>
+    <p><a href="https://www.linkedin.com/in/%E7%A5%A5-%E8%B7%AF-187513116?ts=1484621342597&amp;trk=profile_share_wechat" target="_blank" rel="noopener noreferrer">路祥的领英名片</a></p>
+    <p><a href="https://shop114641790.taobao.com/" target="_blank" rel="noopener noreferrer">紫火灵狐的淘宝店</a></p>
+    <p><a href="https://maimai.cn/contact/share/card?u=gjeeiwxhx7es&amp;share_channel=wxchat" target="_blank" rel="noopener noreferrer">脉脉</a></p>
+    <p><a href="http://r.renhe.cn/7545223" target="_blank" rel="noopener noreferrer">和聊</a></p>
+    <h1>&nbsp;</h1>
+  </blockquote>
+</ol>
+</body>
+</html>
