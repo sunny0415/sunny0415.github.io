@@ -55,7 +55,17 @@ body p {
     <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/hebing.jpg" width="879" height="699" /></p>
     <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/jiemian.jpg" width="1366" height="736" /></p>
     <h2>3.这个表格存在一个问题，就是每个表都有同样的前5行，这是我不需要的，需要删除掉，我的老师给了我最终实现的方式，就是修改代码。<strong>高级编辑器&#8212;&#8212;黏贴代码&#8212;&#8212;完成</strong>，然后再展开折叠的列。代码如下： </h2>
-    <p><img src="路祥。我爱你的网站_wps1.png" alt="" width="686" height="335" /></p>
+    <table width="741" height="203" border="1">
+      <tr>
+        <td height="197"><p >let<br />
+          源 = Folder.Files(&quot;F:\工作\powerquery教程\1111&quot;),<br />
+          删除的其他列 = Table.SelectColumns(源,{&quot;Name&quot;, &quot;Content&quot;}),<br />
+          已添加自定义 = Table.AddColumn(删除的其他列, &quot;待展开列&quot;, each Table.PromoteHeaders(Table.RemoveFirstN(List.First(Table.Column(Excel.Workbook([Content]),&quot;Data&quot;)),5)))<br />
+          in<br />
+        已添加自定义 </p></td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
     <p align="justify" ><strong>注意：代码中的文件夹路径，需要修改为实际的文件路径</strong><strong><br />
     </strong></p>
     <p align="justify" ><strong>4.</strong>接下来展开&#8220;待展开列&#8221;，并删除多余的列，因为我们并不是需要所有的数据，如果你需要，那就只需要删除&#8220;content&#8221;这一列就够了 </p>
