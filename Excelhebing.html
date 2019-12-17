@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0046)https://xn-%2Djjzp43b.xn-%2D6qq986b3xl/wo.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>路祥。我爱你的网站</title>
+<meta name="Keywords" content="路祥个人博客,15522542120,路祥我爱你">
+<meta name="Description" content="路祥个人博客,15522542120,生意参谋下载多表格汇总合并到一个表中">
+<style type="text/css">
+#目录 {
+	color: #F00;
+}
+body p {
+	text-align: center;
+}
+body p {
+	text-align: left;
+}
+.qqqq {
+	color: #FF0;
+}
+.qqq {
+	color: #00F;
+}
+</style>
+<!--<base target="_blank">--><base href="." target="_blank">
+</head>
+
+<body bgcolor="#CCCCCC">
+<h2>这是我个人的网站，挂在GitHub上托管，访问很慢，所以就不放图片直接放代码。够丑，直接看内容，下面是我网站的目录，想看哪一篇直接点开看就行，图片挂在cos托管上，GitHub上面只有代码，访问就会快一些。</h2>
+<ol>
+  <blockquote>
+    <blockquote>
+      <h1 id="目录">生意参谋下载多个同样格式表格汇总加工到同一个表中并自动更新--------<a href="https://xn--jjzp43b.xn--6qq986b3xl/index.html">返回目录</a></h1>
+    </blockquote>
+    <h2><strong>使用场景</strong><strong> </strong></h2>
+    <blockquote>
+      <p>生意参谋多个渠道可以下载按照时间不同生成一系列的数据表，具有同样规则的标题，同样的格式、结构、表头等，通过对数个甚至数十数百个表格数据汇总分析，是工作的重要内容，手动将所有表格汇总到一起，不现实，劳动量大，无法避免错误，然后我学到了通过Excel来实现这个功能的方法，具体指的是&#8220;数据-新检查询&#8221;的&#8220;Power Query&#8221;功能关于这个功能不赘述，主要是为了实现我们的目标。 </p>
+    </blockquote>
+    <h2><strong>需要准备</strong><strong> </strong></h2>
+    <ul>
+      <li>Excel2016版本，这是老师教我时用的版本，安装和激活的方法，请自行百度解决； </li>
+      <li>数据原表，放到文件夹中，例如下图 </li>
+    </ul>
+    <h2><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/yuanbiao.jpg" width="682" height="545" /></h2>
+    <h2><strong>步骤</strong><strong> </strong></h2>
+    <ol>
+      <li><strong>新建表格&#8212;&#8212;数据&#8212;&#8212;新建查询&#8212;&#8212;从文件-从文件夹</strong><strong> </strong></li>
+    </ol>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/xinjianchaxun.jpg" width="748" height="460" /></p>
+    <p>2.<strong>选择数据源表所在文件夹&#8212;&#8212;合并并转换数据-进入Power Query界面</strong><strong> </strong></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/lujing.jpg" width="699" height="219" /></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/jiazai.jpg" width="874" height="688" /></p>
+<p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/pinggu.jpg" width="501" height="163" /></p>
+<p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/lianjie.jpg" width="505" height="169" /></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/hebing.jpg" width="879" height="699" /></p>
+    <p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/jiemian.jpg" width="1366" height="736" /></p>
+    <h2>3.这个表格存在一个问题，就是每个表都有同样的前5行，这是我不需要的，需要删除掉，我的老师给了我最终实现的方式，就是修改代码。<strong>高级编辑器&#8212;&#8212;黏贴代码&#8212;&#8212;完成</strong>，然后再展开折叠的列。代码如下： </h2>
+    <p><img src="路祥。我爱你的网站_wps1.png" alt="" width="686" height="335" /></p>
+    <p align="justify" ><strong>注意：代码中的文件夹路径，需要修改为实际的文件路径</strong><strong><br />
+    </strong></p>
+    <p align="justify" ><strong>4.</strong>接下来展开&#8220;待展开列&#8221;，并删除多余的列，因为我们并不是需要所有的数据，如果你需要，那就只需要删除&#8220;content&#8221;这一列就够了 </p>
+    <p align="justify" >5.然后是手动修改标题中多出来的&#8220;待展开列.&#8221;这几个字符，没找到好的办法，只能一个个删除，好在表头就算再多，也是有数的。 </p>
+<p><img src="https://wangzhan-1253293507.cos.ap-chengdu.myqcloud.com/Excel-hebing/shanchu.jpg" width="1332" height="497" /></p>
+<h2>6.到了这一步就可以点右上角的&#8220;关闭并上载&#8221;了。数据表格汇总完成。</h2>
+<ul>
+  <li>在操作步骤中，随时可以点&#8220;关闭并上载&#8221;查看效果，不满意可以双击右侧<strong>&#8220;工作簿查询&#8221;进入Power Query编辑器，修改</strong></li>
+  <li>Power Query编辑器是有很多可以进行计算的方法，求和计数平均等，还有计算年月日星期几，还有其他各种需要的表格计算，更多功能在于不断探索，通过这一系列操作，不仅仅是把大量的表格汇总到一起进行编辑和计算，便于后续分析 </li>
+  <li>向原表文件夹中继续添加相同结构的表格，在新建的汇总表里面打开工作簿查询点击刷新，就会同步更新了 </li>
+  <li>这一步已经解决了标题的问题，这个功能是分析的一部分，在这个表的基础上，可以做插入数据透视，图表和切片器进行进一步的加工，分析和演示，通过这个，我们可以看到Excel的强大，这个应该已经是数据库的操作了。希望能帮到需要的人。 </li>
+</ul>
+<p align="justify" >&nbsp;</p>
+<p align="justify" >喜欢这篇教程的，可以关注我，访问我的网站了解更多 <a href="https://xn--jjzp43b.xn--6qq986b3xl/" ><u>路祥.我爱你</u></a></p>
+<p><br>
+    </p></blockquote>
+  <blockquote>
+    <h3>如果你想了解我，就可以<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2755856099&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer">直接沟通<img title="直接联系" src="./路祥。我爱你的网站_files/pa.下载" alt="直接联系" border="0"></a></h3>
+    <p><img src="./路祥。我爱你的网站_files/weixin.jpg.下载" alt="" width="231" height="231"></p>
+    <p>个人微信15522542120</p>
+    <p><a href="https://www.linkedin.com/in/%E7%A5%A5-%E8%B7%AF-187513116?ts=1484621342597&amp;trk=profile_share_wechat" target="_blank" rel="noopener noreferrer">路祥的领英名片</a></p>
+    <p><a href="https://shop114641790.taobao.com/" target="_blank" rel="noopener noreferrer">紫火灵狐的淘宝店</a></p>
+    <p><a href="https://maimai.cn/contact/share/card?u=gjeeiwxhx7es&amp;share_channel=wxchat" target="_blank" rel="noopener noreferrer">脉脉</a></p>
+    <p><a href="http://r.renhe.cn/7545223" target="_blank" rel="noopener noreferrer">和聊</a></p>
+    <h1>&nbsp;</h1>
+  </blockquote>
+</ol>
+
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png&quot;);"></div></div><div></div></body></html>
